@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Favorite Books</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Favorite Books</h1>
+    <div class="input-section">
+      <input type="text" id="bookTitle" placeholder="Enter book title">
+      <button onclick="addBook()">Add Book</button>
+      <button onclick="displayList()">Display List</button>
+      <button onclick="clearList()">Clear List</button>
+      <button onclick="saveList()">Save List</button>
+      <button onclick="displayAllBooks()">Display All Books</button>
+      <button onclick="downloadList()">Download List</button>
+    </div>
+    <ul id="bookList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

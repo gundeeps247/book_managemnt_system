@@ -1,0 +1,9 @@
+FROM alpine:latest
+
+RUN apk --no-cache add sqlite
+
+WORKDIR /db
+
+COPY init-db.sh /db/
+
+CMD ["sh", "/db/init-db.sh"]
